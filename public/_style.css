@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  border: 1px solid gray;
+  padding: 0 5px;
+  overflow: auto;
+  max-width: 300px;
+}
+
+.note {
+  color: #aaa;
+}
+
+.red {
+  color: #f33;
+  font-weight: bold;
+}
+
+.invisible {
+  display: none;
+}
+
+.plus {
+  margin: 0 12px 0 0;
+  font-size: 2em;
+}
+
+.mdc-form-field {
+  flex-direction: column;
+  display: none;
+  height: 100%;
+}
+
+.mdc-text-field,
+.mdc-select {
+  margin-top: 8px;
+}
+
+.visible {
+  display: inline-flex;
+}
+
+.content {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mdc-button {
+  margin: 8px 0;
+}
+
+.align-to-right {
+  display: flex;
+  width: 252px;
+  justify-content: flex-end;
+}

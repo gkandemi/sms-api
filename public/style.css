@@ -1,70 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap");
+
 * {
   box-sizing: border-box;
-}
-
-html,
-body,
-main {
-  min-height: 100%;
-}
-
-body {
   margin: 0;
   padding: 0;
 }
 
-pre {
-  border: 1px solid gray;
-  padding: 0 5px;
-  overflow: auto;
-  max-width: 300px;
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #fff;
+  color: white;
 }
-
-.note {
-  color: #aaa;
-}
-
-.red {
-  color: #f33;
-  font-weight: bold;
-}
-
-.invisible {
-  display: none;
-}
-
-.plus {
-  margin: 0 12px 0 0;
-  font-size: 2em;
-}
-
-.mdc-form-field {
-  flex-direction: column;
-  display: none;
-  height: 100%;
-}
-
-.mdc-text-field,
-.mdc-select {
-  margin-top: 8px;
-}
-
-.visible {
-  display: inline-flex;
-}
-
-.content {
-  margin: 0 16px;
+header {
+  font-size: 20px;
+  height: 64px;
+  background-color: #c00201;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.verify {
+  padding: 10px 20px;
+  background-color: #c00201;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+}
+
+.verify:focus {
+  background-color: #b83f3f;
+}
+
+.appContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-.mdc-button {
-  margin: 8px 0;
+input {
+  padding: 10px 20px;
+  outline: none;
+  font-size: 18px;
+  border: none;
 }
 
-.align-to-right {
-  display: flex;
-  width: 252px;
-  justify-content: flex-end;
+input:disabled {
+  background-color: #f4f4f4;
 }
