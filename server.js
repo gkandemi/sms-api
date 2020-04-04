@@ -30,8 +30,7 @@ app.use((req, res, next) => {
 
 app.get("/", function(request, response) {
   response.render("index.html", {
-    AppHash: AppHash,
-    OriginTrial: process.env.OT_TOKEN
+    AppHash: AppHash
   });
 });
 
