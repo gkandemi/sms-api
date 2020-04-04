@@ -1,7 +1,7 @@
 {
-  "name": "sms-receiver-demo",
+  "name": "sms-otp-receiver-demo",
   "version": "0.0.1",
-  "description": "A demo of SMS Receiver API.",
+  "description": "SMS Receiver API uygulaması",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

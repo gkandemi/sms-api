@@ -1,6 +1,6 @@
 {
-  "name": "SMS Receiver API Demo",
-  "short_name": "SMS Receiver",
+  "name": "Tek Kullanımlık Şifre",
+  "short_name": "SMS OTP API",
   "display": "standalone",
   "start_url": "/?pwa",
   "icons": [
