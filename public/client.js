@@ -3,6 +3,7 @@ const startBtn = document.querySelector(".startBtn");
 const snackbarContent = document.getElementById("snackbar");
 const homeScreen = document.querySelector(".homeScreen");
 const appContainer = document.querySelector(".appContainer");
+const install = document.querySelector("#install");
 
 startBtn.addEventListener("click", async e => {
   try {
@@ -58,3 +59,13 @@ function snackbar(content, expire) {
     snackbarContent.innerHTML = content;
   }
 }
+
+window.addEventListener("beforeinstallprompt", e => {
+  e.preventDefault();
+  let installEvent = e;
+  install.style.display = "block";
+  install.addEventListener("click", async () => {
+    installEvent.prompt();
+    install.style.display = "none";
+  });
+});
