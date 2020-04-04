@@ -11,7 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
 
   background-color: #fff;
-  color: white;
+  color: #333;
 }
 header {
   font-size: 20px;
@@ -22,9 +22,10 @@ header {
   align-items: center;
   margin-bottom: 10px;
   padding: 0 10px;
+  color: white;
 }
 
-.verify {
+button {
   padding: 10px 20px;
   background-color: #c00201;
   color: white;
@@ -36,16 +37,49 @@ header {
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-.verify:focus {
+button:focus {
   background-color: #b83f3f;
 }
 
 .appContainer {
+  display: none;
+  margin-top: 20px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homeScreen {
+  display: block;
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#unsupported {
+  color: #c00201;
+  font-weight: bold;
+  display: none;
+  margin-bottom: 20px;
+}
+
+.requirements {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  font-size: 15px;
+}
+
+.requirements li {
+  margin-bottom: 10px;
+}
+.requirements li strong {
+  color: #c00201;
 }
 
 h3 {

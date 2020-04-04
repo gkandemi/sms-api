@@ -17,13 +17,40 @@
       SMS Api | kablosuzkedi
       <i class="fa fa-mobile"></i>
     </header>
+
+    <div class="homeScreen">
+      <p id="unsupported">
+        Tarayıcınız SMS Receiver API'yi desteklemiyor
+      </p>
+
+      <h3 class="requirements-title">Gereksinimler</h3>
+      <ul class="requirements">
+        <li>
+          Google Chrome 78 veya daha büyük bir sürüm
+        </li>
+        <li>
+          <strong>
+            chrome://flags/#enable-experimental-web-platform-features </strong
+          ><br /><br />
+          Özelliğinin aktifleştirilmesi
+        </li>
+      </ul>
+
+      <button class="startBtn">KONTROL ET</button>
+    </div>
+
     <div class="appContainer">
       <h3>Telefon numarasını kontrol edin</h3>
-      <input type="text" class="otpField" disabled placeholder="6 Haneli Kod" />
-      <button class="verify">KONTROL ET</button>
-
-      <div id="snackbar"></div>
+      <input
+        pattern="^([0-9]+)$"
+        type="text"
+        class="otpInput"
+        value="123456"
+        placeholder="6 Haneli Kod"
+      />
     </div>
+
+    <div id="snackbar"></div>
     <script src="/client.js" defer></script>
   </body>
 </html>
