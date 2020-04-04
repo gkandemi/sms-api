@@ -22,7 +22,7 @@ app.use((req, res, next) => {
     req.get("x-forwarded-proto") &&
     req.get("x-forwarded-proto").split(",")[0] !== "https"
   ) {
-    return res.redirect(301, "https://" + process.env.HOSTNAME);
+    return res.redirect(301, `https://${process.env.HOSTNAME}`);
   }
   req.schema = "https";
   next();
