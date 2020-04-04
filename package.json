@@ -1,0 +1,27 @@
+{
+  "name": "sms-receiver-demo",
+  "version": "0.0.1",
+  "description": "A demo of SMS Receiver API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "twilio": "^4.6.0",
+    "hbs": "^4.0.4",
+    "request": "^2.88.0"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/sms-receiver-demo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
